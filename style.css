@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.container {
+    width: 690px;
+    background: white;
+    border-radius: 7px;
+    padding: 30px;
+}
+
+.wrapper {
+    border-radius: 3px;
+    border: 1px solid black;
+}
+.row{
+    display: flex;
+}
+.text-input {
+    display: flex;
+}
+.text-input textarea {
+    height: 250px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.text-input .from-text {
+    border-right: 1px solid black;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+.row select {
+    border: none;
+    outline: none;
+}
+.icons i {
+    padding: 10px;
+    color: dimgrey;
+}
+.reverse {
+    padding-top: 10px;
+}
+.translate-btn {
+    width: 100%;
+    padding: 8px;
+    margin-top: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: white;
+    background-image: linear-gradient(to right top, #051937, #3d3d61, #72668c, #ab92b9, #e7c1e7);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+}
+/* =============================================================================== */
+
+
+@media (max-width:640px) {
+    .text-input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-input textarea {
+        padding: 5px;
+        height: 200px;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+
+    .container {
+        margin: 20px auto;
+        width: 450px;
+        height: 70%;
+        background: white;
+        border-radius: 7px;
+        padding: 30px;
+        box-shadow: 2PX 2PX 5PX rgba(0, 0, 0, 0.473);
+    }
+.icons i {
+    padding: 1px;
+    color: dimgrey;
+}
+.row{
+    display: flex;
+}
+}
+
